@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AngelMunoz/Perla/main/perla.schema.json",
+  "index": "./index.html",
+  "fable": {
+    "autoStart": true,
+    "project": "./src/App.fsproj"
+  },
+  "devServer": {
+    "autoStart": true,
+    "port": 7331,
+    "mountDirectories": {
+      "./src": "/src"
+    },
+    "useSSL": false
+  },
+  "build": {
+    "esbuildVersion": "0.13.1",
+    "target": "es2020",
+    "format": "esm",
+    "minify": false
+  }
+}
