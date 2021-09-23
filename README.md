@@ -1,10 +1,12 @@
 # Fable + Sutil!
 
+> This Repo requires .NET6 due to [Perla](https://github.com/AngelMunoz/Perla)
+
 Sutil App Starter
 
 ### Run
 
-```bash
-pnpm install # or npm install
-pnpm start # or npm start
+```pwsh
+dotnet tool restore
+dotnet perla serve
 ```
